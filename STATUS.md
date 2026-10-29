@@ -4,9 +4,10 @@
 
 A free, fillable, printable LLC formation kit (education only — not legal advice), built and published by Asdale Dynamics, LLC (Indiana, formed October 2026). No account, no signup, nothing to install.
 
-**Files (14, all committed to git):**
+**Files (15, all committed to git):**
 - `LICENSE` — MIT License, copyright line exactly `Copyright (c) 2026 Asdale Dynamics, LLC`
-- `README.md` — kit overview, contents, how to use, education-only disclaimer, Asdale Dynamics, LLC credit, license
+- `README.md` — kit overview, contents, how to use, education-only disclaimer, Asdale Dynamics, LLC credit, license (rewritten in a warmer, beginner-friendly "like a friend would" tone)
+- `verify.sh` — repeatable verification script (file presence, LICENSE line, README credit, HTML structure, internal links, hygiene/secrets check)
 - `docs/01-name-search-checklist.md` — Markdown source: state business name search checklist
 - `docs/02-articles-of-organization.md` — Markdown source: articles of organization filing draft
 - `docs/03-operating-agreement-outline.md` — Markdown source: operating agreement outline
@@ -29,16 +30,19 @@ A free, fillable, printable LLC formation kit (education only — not legal advi
 3. Type into the fields on screen, or print blank (Ctrl+P / Cmd+P) and fill in by hand. Print styles hide buttons and keep forms clean on paper.
 4. Edit the Markdown sources in `docs/` to adapt the kit to your state; state filing offices, forms, and fees differ.
 5. Indiana-specific notes are included throughout (Asdale Dynamics, LLC's home state): INBiz name search and filing, Indiana designator rules, no annual report but a biennial report every other year (first one due October 2028 for this LLC).
+6. Run `./verify.sh` to re-run the verification suite.
 
 ## Verification results
 
-Verification script run against all 14 files:
-- All expected files present
-- All six HTML files parse without structural errors
-- All internal links resolve (including `LICENSE` from `print/index.html`, fixed from `../../LICENSE` to `../LICENSE`)
+`./verify.sh` — 20 passed, 0 failed:
+- All 15 expected files present
 - `LICENSE` contains the exact copyright line `Copyright (c) 2026 Asdale Dynamics, LLC` and the MIT header
 - `README.md` credits Asdale Dynamics, LLC
-- Git initialized, one commit on branch `master` (root commit `04f91bb`), working tree clean
+- All six HTML files parse without structural errors
+- All internal links resolve (including `LICENSE` from `print/index.html`, fixed from `../../LICENSE` to `../LICENSE`)
+- No `.github/workflows`
+- No secrets, API keys, or personal data detected
+- Git initialized, two commits on branch `master` (latest `e6b31eb`), working tree clean
 
 ## Known gaps
 
@@ -46,5 +50,5 @@ Verification script run against all 14 files:
 - Not a state-approved form: the Articles template is an educational outline; download the official form from the state before filing.
 - No legal review: operating agreement outline is not attorney-reviewed; multi-member or regulated LLCs should consult a lawyer.
 - EIN: international applicants without a U.S. SSN/ITIN must use the IRS phone path; not all paths are equally fast.
-- No build step: HTML/Markdown are opened directly in a browser; nothing to compile or test beyond file checks above.
+- No build step: HTML/Markdown are opened directly in a browser; nothing to compile or test beyond `./verify.sh`.
 - Education only: not legal, tax, or medical advice; Asdale Dynamics, LLC is not a law firm.

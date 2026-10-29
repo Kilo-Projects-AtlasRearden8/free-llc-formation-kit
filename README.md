@@ -2,26 +2,27 @@
 
 Fillable, printable, no account needed. Education only — not legal advice.
 
-A beginner-friendly freebies kit for forming a Limited Liability Company (LLC), built and published by **Asdale Dynamics, LLC**. It is designed for small-business owners, authors, and creators who want to work through the paperwork themselves, step by step, in plain English.
+A beginner-friendly freebies kit for forming a Limited Liability Company (LLC), built and published by **Asdale Dynamics, LLC**. It's for small-business owners, authors, and creators who want to work through the paperwork themselves, step by step, in plain English — like a friend walking you through it.
 
 ## What's inside
 
 | Document | What it helps you do |
 |---|---|
-| [Name-Search Checklist](docs/01-name-search-checklist.md) / [printable](print/name-search-checklist.html) | Search your state's business registry and check name availability before filing |
+| [Name-Search Checklist](docs/01-name-search-checklist.md) / [printable](print/name-search-checklist.html) | Search your state's business registry and check name availability before you file |
 | [Articles of Organization Template](docs/02-articles-of-organization.md) / [printable](print/articles-of-organization.html) | Fill in your LLC's formation filing draft |
 | [Operating Agreement Outline](docs/03-operating-agreement-outline.md) / [printable](print/operating-agreement.html) | Outline the rules and ownership of your LLC |
 | [EIN Application Steps](docs/04-ein-application.md) / [printable](print/ein-application.html) | Apply for a free Employer Identification Number from the IRS |
 | [Annual Filing Calendar](docs/05-annual-filing-calendar.md) / [printable](print/annual-filing-calendar.html) | Track ongoing filings so your LLC stays in good standing |
 
-Every page is also available as a standalone HTML file in `print/` — open it in any browser, fill it in on screen or by hand, and print. No account, no sign-up, nothing to install.
+Every page is also a standalone HTML file in `print/` — open it in any browser, fill it in on screen or print it blank and write by hand. No account, no sign-up, nothing to install.
 
-## How to use
+## How to use it
 
-1. Open `print/index.html` in any web browser, or open any individual HTML page in `print/`.
-2. Fill in the fields on screen, or print blank and fill in by hand.
-3. Use the [Markdown sources in `docs/`](docs/) to adapt the language for your state. Requirements differ by state — verify current rules with your Secretary of State before filing.
-4. Print with your browser's print dialog (Ctrl+P / Cmd+P). Print styles strip out buttons and keep the forms clean on paper.
+1. **Open the kit.** Open `print/index.html` in any web browser, or open any individual HTML page in `print/`.
+2. **Work in order.** Name search → file Articles of Organization → write an operating agreement → get a free EIN from the IRS → set up your filing calendar.
+3. **Fill it in.** Type into the fields on screen, or print blank (Ctrl+P / Cmd+P) and fill in by hand. Print styles hide the buttons and keep the forms clean on paper.
+4. **Adapt for your state.** Use the Markdown sources in `docs/` to adjust the language. LLC rules, fees, and deadlines differ by state — verify current requirements with your Secretary of State before you file.
+5. **Keep records.** Store your filings, the EIN confirmation notice, and the signed operating agreement with your business records.
 
 ## Education only — not legal advice
 
